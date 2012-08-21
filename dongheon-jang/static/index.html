@@ -1,0 +1,192 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>HTML5 and Google App Engine</title>
+    
+    <meta name="description" content="HTML5 and Google App Engine">
+    <meta name="author" content="dongheon.jang@lge.com" />
+    <link href="css/impress-demo.css" rel="stylesheet" />
+</head>
+<body>
+
+<div id="impress" class="impress-not-supported">
+
+    <div class="fallback-message">
+        <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+        <p>For the best experience please use the latest <b>Chrome</b> or <b>Safari</b> browser. Firefox 10 (to be released soon) will also handle it.</p>
+    </div>
+
+    
+  <!-- summary to see where we are going 
+    <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="15">
+    </div>
+    -->
+    <div class="step slide" data-x="-4000" data-y="-1000">
+        
+            <div id="openning">HTML5 and Google App Engine: </div>
+			<div id="openning_sub">The Epic Tag Team Take on Modern Web Apps at Scale
+			
+			<p> SW플랫폼 연구소, 장동헌</p>
+			</div>
+            
+    </div>
+
+    <div class="step slide" data-x="-3000" data-y="-1000">
+        <h1>Index</h1>
+        <div id="agenda">
+            <ul>
+                <li>Morden Web Applications</li>
+                <li>Demo : Birra</li>                				
+            </ul>
+        </div>
+		<div id="agenda_sub">
+		<ul>
+			<li>Client : HTML5 Web App 을 개발할 환경이 갖춰졌다!</li>
+			<li>Server : GAE를 사용하면 Google Infra + Platform 에서 빠르고 쉽게 개발할 수 있다!</li>
+		</ul>
+		</div>
+		<span id="google_io_logo"> 
+			<img src="i/google.png"/> 
+		</span>
+    </div>
+
+    <div id="bored" class="step slide" data-x="-2000" data-y="-1500">
+        <h1>Morden Web Applications</h1>
+        <div id="agenda">
+            <ul>
+                <li>Self Contained & Functional</li>
+                <li>Offline First</li>                
+				<li>Client Side Architecture & MVC Frameworks</li>                
+				<li>Device Aware / 60fps</li>                
+            </ul>
+        </div>
+		<span> 
+			<img  id="webapps" src="i/webapps.png"/> 
+		</span>
+    </div>
+
+    <div id="wherenow" class="step slide" data-x="-1000" data-y="-1500">
+        <h1>HTML5 Technologies</h1>
+        <div class=mid_slide">
+            <ul class="padded_top">
+                <li>Client Side Frameworks <a href="http://codebrief.com/2012/01/the-top-10-javascript-mvc-frameworks-reviewed/">(MVC)</a></li>
+					<ul>
+						<li><a href="http://emberjs.com/">Ember.js</a></li>
+						<li><a href="http://documentcloud.github.com/backbone/">Backbone.js</a></li>
+						<li><a href="http://angularjs.org/">Angular.js</a></li>						
+					</ul>
+                <li>Offline</li>
+					<ul>
+						<li>Working anywhere</li>
+						<li>Better performance</li>
+						<li>HTML5 : AppCache, localStorage, IndexedDB, File API</li>												
+					</ul>
+                <li>WebIntents</li>
+                <li>Google Chrome Frame</li>
+            </ul>
+            <span>
+                <img  id="web_intents_chrome_frame" src="i/web_intents_chrome_frame.png"/>
+            </span>
+        </div>
+    </div>
+
+    <div id="server_problem" class="step slide" data-x="0" data-y="-1500">
+        <h1>The Server Side</h1>
+        <q>
+            All modern web apps have to deal with a "home" server. But Who wants to run a server
+        </q>
+		<ul class="padded_top">
+			<li>Spikey traffic</li>
+			<li>Client Server communication</li>
+			<li>Serialization</li>												
+			<li>OAuth Dance</li>												
+		</ul>
+    </div>
+
+    <div id="title" class="step" data-x="0" data-y="0" data-scale="3">
+        <span class="try">You should try</span>
+        <h1>App Engine<sup>*</sup></h1>
+        <span class="footnote"><sup>*</sup> Only if you want to be happy</span>
+    </div>
+
+    <div id="its" class="step" data-x="850" data-y="2000" data-rotate="90" data-scale="3">
+        <h1>App engine to the rescue</h1>        
+        <ul>
+          <li>Make it easy to build</li>
+          <li>Easy to run and manage</li>
+          <li>Easy to scale</li>
+          <li>Free to get started, pay for what you use</li>
+          <li>Not just for web serving. but also data persistence</li>          
+          
+            <img id="appengine_lang" src="i/appengine-lang.png"/>
+          
+        </ul>
+    </div>
+
+    <div class="step" data-x="3000" data-y="1100" data-rotate="180" data-scale="3">
+        <h1>Google Cloud Endpoints</h1>
+		<p>APIs for Mobile and Web Backends Made Easy!</p>
+        <img  id="appengine-cloud-endpoints" src="i/appengine-cloud-endpoints.png" />
+    </div>
+
+    <div id="tiny" class="step" data-x="-825" data-y="1825" data-z="-3000" data-rotate="300" 
+            data-scale="1">
+        <h1>Cloud Endpoints Src</h1>
+
+        <img src="i/cloud_endpoints_src.png" />
+    </div>
+
+    <div class="step" data-x="3000" data-y="-850" data-rotate="270" data-scale="2">
+        <h1>Demo</h1>
+        <a href="http://birra-io2012.appspot.com"> <img id="img-birra-demo" src="i/birra-demo.png" /></a>
+        <a href="http://birra-io2012.appspot.com/test/">Test Page </a>
+    </div>
+
+    <div class="step" data-x="4200" data-y="-300" data-scale="1">
+
+            <img src="i/gae-admin-console.png" />
+    </div>
+
+    <div id="source" class="step" data-x="4000" data-y="2000" data-rotate="20" data-scale="2">
+         <h1>Key Take Aways</h1>
+         <ul>
+            <li> Building modern applications with HTML5 and App Engine </li>
+            <li> AppEngine makes for easy deployment at scale </li>
+            <li> Build interactivity by leveraging Cloud Endpoints </li>
+            <li> Use JavaScript Client Library</li>
+        </ul>
+
+         <h3>Exploit Mordern Browser Features : Offline, Geo, Web Intents</h3>
+    </div>
+
+    <div id="one-more-thing" class="step" data-x="2000" data-y="3600" data-scale="4">
+        <p>마지막으로...</p>
+    </div>
+
+    
+    <div id="its-in-3d" class="step" data-x="3000" data-y="4000" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
+        <p><span class="have">이 자료는</span> <span class="you">HTML5,</span> <span class="noticed">CSS3, </span> <span class="its">Javascript<sup>*</sup> 를 사용하여 만들어 졌습니다.</span>
+        </p>
+        <p><a href="http://dongheon-jang.appspot.com">http://dongheon-jang.appspot.com</a></p>
+        <a href="http://bartaz.github.com/impress.js/#/bored" target="_blank">
+            * Impress.js
+        </a>
+    </div>
+
+    <!-- summary -->
+    <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
+    </div>
+
+</div>
+
+
+
+
+<script src="js/impress.js"></script>
+
+</body>
+</html>
+
+

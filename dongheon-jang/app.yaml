@@ -1,0 +1,35 @@
+ # filename: app.yaml
+ # for upload pw : zjypnofcjonvnipn
+application: dongheon-jang
+version: 2 
+runtime: python
+api_version: 1
+
+default_expiration: "30d"
+
+handlers:
+- url: /i/(.*\.(gif|png|jpg))
+  static_files: static/i/\1
+  upload: static/i/(.*\.(gif|png|jpg))
+  
+- url: /swf/(.*\.swf)
+  static_files: static/swf/\1
+  upload: static/swf/(.*\.swf)
+
+- url: /css/(.*\.css)
+  mime_type: text/css
+  static_files: static/css/\1
+  upload: static/css/(.*\.css)
+
+- url: /js/(.*\.js)
+  mime_type: text/javascript
+  static_files: static/js/\1
+  upload: static/js/(.*\.js)
+
+- url: /(.*\.html)
+  mime_type: text/html
+  static_files: static/\1
+  upload: static/(.*\.html)
+
+- url: /.*
+  script: index.py      
